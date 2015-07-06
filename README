@@ -60,4 +60,64 @@ http://www.fckeditor.net/
 * Jereme Claussen, www.jeremeclaussen.com, for debugging help.
 * http://github.com/dko for the assistance getting this to work under Radiant 0.8.0.
 
+= FCKEDITOR
+这给你的优秀FCKE​​ditor的（与文件上传和拼写检查）在您的网页辐射部分。
 
+==要求
+这个扩展已经过测试的辐射版本0.8.0。它不会工作在版本0.8.0 <。
+
+如果你需要一个版本的扩展，适用于辐射<0.8.0的，请参阅“喜洋洋-0.7.1”（或其他方式）的标签在GitHub上。
+
+你需要有安装的aspell拼写检查工作。
+
+==安装
+在$ RADIANT_ROOT
+
+1.获取扩展：
+混帐混帐克隆：//github.com/djcp/radiant-fckeditor.git供应商/扩展/ fckeditor的
+
+2.安装相关的资源投入到$ RADIANT_ROOT / APP /公/ JavaScript的/ FCKeditor的*
+耙辐射：扩展：FCKeditor的：更新
+
+3.重新启动部署服务器。
+
+==卸载
+删除：
+*供应商/扩展/ fckeditor的
+*公/ JavaScript的/ FCKeditor的/
+*公/ JavaScript的/ fckconfig.js
+*公/上传/文件|闪存|图片|媒体
+
+==注意事项
+*有没有改变你的数据库的辐射。
+*上传文件保存在$ RADIANT_ROOT /公/上传
+*您可以FCKEditor的手柄只有一些网页的部分 - 它不会有部分被其他过滤器处理的干扰。
+*你可以上传JPG，PNG，GIF和Flash文件，以及许多常见的视频，音频和办公文档格式，包括文本和HTML。
+
+==用法
+设置你的页面的部分过滤器“的FCKeditor”编辑器将被实例化。您可以通过设置过滤器回不是其他的东西删除页面部分编辑器“FCKeditor的。”
+
+使用上的图片，Flash和链接工具的“浏览服务器”按钮来调用该文件上传功能。
+
+==陷阱
+*请务必允许弹出窗口从您的网站的辐射。该FCKEditor的使用弹出窗口广泛。
+*半径的标签可能会被FCKEditor的错位。我们已经竭尽所能，以确保FCKEditor的忽略他们，但仍然会有怪癖。详情参见/管理/页/编辑/页上的过滤器参考。
+*如果您还没有安装的aspell，拼写检查永远不会发现错​​误。它会一直返回“没有发现任何错误。”
+
+== TODOS
+*寻找与PageAttachments插件整合这个插件，使文件住在网页和相同的上传是FCKEditor的和Radius标签可用。
+*创建一个管理员选项卡，以便允许的MIME类型和工具栏按钮自定义的规范。
+
+==参见
+根据斯科特·卢瑟福的Rails 2.0的插件：
+http://blog.caronsoftware.com/2008/2/6/fckeditor-plugin-0-4-3-released
+
+http://www.fckeditor.net/
+
+==作者
+丹·科利斯 - 普罗丹在collispuro.net
+*这个插件的第一个版本是在做www.endpoint.com的角钱。谢谢你们！
+
+==贡献者
+* Jer​​eme克劳森，www.jeremeclaussen.com，用于调试的帮助。
+* http://github.com/dko获取此0.8.0辐射下工作的援助。
